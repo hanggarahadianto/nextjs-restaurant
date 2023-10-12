@@ -10,6 +10,7 @@ export const restaurantDetails = async (id: string) => {
     return;
   }
   const restaurantDataID: Restaurant[] = await response.json();
+  // console.log(restaurantDataID);
   return restaurantDataID;
 };
 
@@ -24,6 +25,6 @@ export const getRestaurantData = async () => {
   }
 
   const dataRestaurant = await res.json();
-  // console.log(dataBuidling);
+  // console.log(dataRestaurant);
   return dataRestaurant.data;
 };

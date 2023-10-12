@@ -1,14 +1,14 @@
 import { TagMaping, Tags } from "@/types/tags";
 
-export const getTagByRestaurantId = async (id: string) => {
+export const getMenuByRestaurantId = async (id: string) => {
   const response = await fetch(
-    `http://localhost:5000/tag/getbyRestaurantId/${id}`
+    `http://localhost:5000/menu/getbyRestaurantId/${id}`
   );
   if (!response.ok) {
     console.log("failed to fetch");
     return;
   }
-  const tagData = await response.json();
+  const menuData = await response.json();
   //   console.log(tagData);
-  return tagData.data;
+  return menuData.data;
 };

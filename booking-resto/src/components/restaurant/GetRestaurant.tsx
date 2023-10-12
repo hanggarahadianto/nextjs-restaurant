@@ -12,7 +12,7 @@ export default async function GetRestaurant() {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-      {restaurantData.map((Restaurant, index) => (
+      {restaurantData.map((Restaurant) => (
         <div key={Restaurant.ID}>
           <Link href={`/restaurants/${Restaurant.ID}`}>
             <div className="md:max-w-md md:mx-auto shadow-md rounded-xl overflow-hidden relative">
