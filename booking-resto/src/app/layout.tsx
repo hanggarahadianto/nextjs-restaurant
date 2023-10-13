@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { Inter, Quicksand, Roboto } from "next/font/google";
 import Provider from "./provider";
 import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
+import Community from "@/components/community/Community";
 
 const inter = Inter({ subsets: ["latin"] });
 const roboto = Roboto({ subsets: ["latin"], weight: ["400", "700"] });
@@ -21,7 +23,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Provider>
-        <body className={quicksland.className}>{children}</body>
+        <body className={quicksland.className}>
+          <Navbar />
+          {children}
+          <Community />
+          <Footer />
+        </body>
       </Provider>
     </html>
   );

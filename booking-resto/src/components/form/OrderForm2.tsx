@@ -4,7 +4,6 @@ import { Controller, useForm } from "react-hook-form";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -27,7 +26,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "../ui/select";
-// import { Order } from "@/types/order";
 
 type FormData = z.infer<typeof OrderFormSchema>;
 
@@ -35,7 +33,6 @@ interface PropsID {
   params: {
     id: string;
   };
-  // onSubmit: (id: string, order: FormData) => void;
 }
 
 const OrderForm: React.FC<PropsID> = ({ params }) => {

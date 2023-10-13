@@ -1,18 +1,12 @@
 import OrderForm from "@/components/form/OrderForm2";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+
 import { MenuMaping } from "@/types/menu";
 import { TagMaping } from "@/types/tags";
 import { getMenuByRestaurantId } from "@/utils/api/menu.api";
 import { restaurantDetails } from "@/utils/api/restaurant.api";
 import { getTagByRestaurantId } from "@/utils/api/tag.api";
-import { Calendar, PhoneCall } from "lucide-react";
+import { PhoneCall } from "lucide-react";
 import React, { FC } from "react";
 
 interface RestaurantProps {
