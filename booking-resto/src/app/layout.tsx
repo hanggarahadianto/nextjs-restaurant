@@ -6,9 +6,6 @@ import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import Community from "@/components/community/Community";
 
-const inter = Inter({ subsets: ["latin"] });
-const roboto = Roboto({ subsets: ["latin"], weight: ["400", "700"] });
-
 const quicksland = Quicksand({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning={true}>
       <Provider>
         <body className={quicksland.className}>
           <Navbar />

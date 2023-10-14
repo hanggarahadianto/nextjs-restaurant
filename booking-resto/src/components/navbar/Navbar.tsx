@@ -11,9 +11,7 @@ const Navbar = () => {
   return (
     <div className="flex border-b bg-white w-full z-50">
       <div className="container flex mx-auto justify-between bg-white py-4">
-        <Link href="/">
-          <Logo />
-        </Link>
+        <Logo />
 
         {session?.user ? (
           <>

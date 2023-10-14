@@ -1,10 +1,7 @@
 import React from "react";
-import Logo from "../navbar/Logo";
-import { FaceIcon, TwitterLogoIcon } from "@radix-ui/react-icons";
 import {
   FacebookIcon,
   InstagramIcon,
-  LucideFacebook,
   Twitter,
   YoutubeIcon,
 } from "lucide-react";

@@ -12,7 +12,7 @@ export default function LandingPage() {
           </p>
           <div className="mt-20">
             <Button className="bg-blue-400 hover:bg-blue-500 h-16 hover:text-gray-200">
-              Get Started
+              <p>Get Started</p>
             </Button>
           </div>
         </div>
@@ -28,7 +28,7 @@ export default function LandingPage() {
           />
         </div>
       </div>
-      <div className="bg-orange-400 w-96 cols-span-2"></div>
+      <div className="bg-orange-400 w-96 cols-span-2" />
     </div>
   );
 }
